@@ -1,5 +1,7 @@
 # Minimal Web Designer Portfolio
 
+Live Link : https://designer-website-xi.vercel.app/
+
 A high-end, minimal web designer portfolio website built to showcase professional UI/UX design sense, clean layout, and modern frontend practices.  
 This project focuses on **clarity, typography, spacing, and subtle interactions** rather than heavy animations or flashy effects.
 
@@ -22,7 +24,8 @@ The UI follows modern design principles inspired by **Apple, Linear, and Vercel-
 - Services section with clear value presentation  
 - Clean and simple contact form UI (frontend only)  
 - Fully responsive layout (mobile, tablet, desktop)  
-- Reusable and well-structured components  
+- Reusable and well-structured components
+Dark and Light mood function  
 
 ---
 
@@ -38,7 +41,7 @@ The UI follows modern design principles inspired by **Apple, Linear, and Vercel-
 
 ## 🛠 Tech Stack
 
-- **React** / **Next.js**
+- **Next.js**
 - **Tailwind CSS**
 - **Framer Motion** (light usage for subtle transitions)
 - JavaScript (ES6+)
