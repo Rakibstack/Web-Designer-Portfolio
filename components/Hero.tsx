@@ -60,12 +60,12 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center px-6 md:px-12 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-6 md:px-12 relative overflow-hidden bg-white dark:bg-gray-950"
     >
       {/* Custom cursor */}
       <div
         ref={cursorRef}
-        className="fixed w-8 h-8 border-2 border-blue-600 rounded-full pointer-events-none z-50 mix-blend-difference hidden md:block"
+        className="fixed w-8 h-8 border-2 border-blue-600 dark:border-blue-400 rounded-full pointer-events-none z-50 mix-blend-difference hidden md:block"
         style={{ transform: 'translate(-50%, -50%)' }}
       />
 
@@ -146,7 +146,7 @@ export default function Hero() {
 
         <h1
           ref={titleRef}
-          className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mb-6"
+          className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mb-6 text-gray-900 dark:text-white"
         >
           <span className="word inline-block">Crafting</span>{' '}
           <span className="word inline-block">digital</span>{' '}
@@ -170,7 +170,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl"
+          className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl"
         >
           Web designer focused on clean interfaces and thoughtful user experiences
         </motion.p>
@@ -183,7 +183,7 @@ export default function Hero() {
         >
           <motion.a
             href="#work"
-            className="relative inline-block px-8 py-4 bg-gray-900 text-white text-lg overflow-hidden group"
+            className="relative inline-block px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-lg overflow-hidden group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -198,17 +198,17 @@ export default function Hero() {
 
           <motion.a
             href="#contact"
-            className="relative inline-block px-8 py-4 border-2 border-gray-900 text-gray-900 text-lg overflow-hidden group"
+            className="relative inline-block px-8 py-4 border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white text-lg overflow-hidden group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <motion.span
-              className="absolute inset-0 bg-gray-900"
+              className="absolute inset-0 bg-gray-900 dark:bg-white"
               initial={{ y: '100%' }}
               whileHover={{ y: 0 }}
               transition={{ duration: 0.3 }}
             />
-            <span className="relative z-10 group-hover:text-white transition-colors">
+            <span className="relative z-10 group-hover:text-white dark:group-hover:text-gray-900 transition-colors">
               Get In Touch
             </span>
           </motion.a>

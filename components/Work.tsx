@@ -83,7 +83,7 @@ export default function Work() {
     <section
       id="work"
       ref={sectionRef}
-      className="py-32 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
+      className="py-32 px-6 md:px-12 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 relative overflow-hidden"
     >
       {/* Animated grid background */}
       <div className="absolute inset-0 opacity-5">
@@ -102,7 +102,7 @@ export default function Work() {
           className="mb-20 text-center"
         >
           <motion.h2
-            className="text-4xl md:text-6xl font-light mb-4"
+            className="text-4xl md:text-6xl font-light mb-4 text-gray-900 dark:text-white"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -110,7 +110,7 @@ export default function Work() {
           >
             Selected Work
           </motion.h2>
-          <p className="text-xl text-gray-600">Projects that showcase creativity and precision</p>
+          <p className="text-xl text-gray-600 dark:text-gray-400">Projects that showcase creativity and precision</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
@@ -163,13 +163,13 @@ export default function Work() {
               </div>
 
               <motion.h3
-                className="text-2xl font-light mb-2 group-hover:text-blue-600 transition-colors"
+                className="text-2xl font-light mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                 whileHover={{ x: 5 }}
                 transition={{ duration: 0.2 }}
               >
                 {project.title}
               </motion.h3>
-              <p className="text-gray-600">{project.category}</p>
+              <p className="text-gray-600 dark:text-gray-400">{project.category}</p>
             </motion.div>
           ))}
         </div>

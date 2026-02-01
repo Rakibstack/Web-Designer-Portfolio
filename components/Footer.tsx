@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Footer() {
   return (
-    <footer className="py-16 px-6 md:px-12 bg-gray-900 text-white">
+    <footer className="py-16 px-6 md:px-12 bg-gray-900 dark:bg-gray-950 text-white border-t border-gray-800 dark:border-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <motion.div
@@ -12,8 +12,8 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-light mb-4">Alex Morgan</h3>
-            <p className="text-gray-400">Creating digital experiences with purpose and clarity</p>
+            <h3 className="text-2xl font-light mb-4 text-white">Alex Morgan</h3>
+            <p className="text-gray-400 dark:text-gray-500">Creating digital experiences with purpose and clarity</p>
           </motion.div>
 
           <motion.div
@@ -22,7 +22,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            <h4 className="text-lg font-medium mb-4">Quick Links</h4>
+            <h4 className="text-lg font-medium mb-4 text-white">Quick Links</h4>
             <div className="space-y-2">
               <motion.a
                 href="#work"
@@ -61,7 +61,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <h4 className="text-lg font-medium mb-4">Connect</h4>
+            <h4 className="text-lg font-medium mb-4 text-white">Connect</h4>
             <div className="flex gap-4">
               <motion.a
                 href="https://twitter.com"
@@ -95,7 +95,7 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="pt-8 border-t border-white/10 text-center text-gray-400"
+          className="pt-8 border-t border-white/10 dark:border-gray-800 text-center text-gray-400 dark:text-gray-500"
         >
           <p>© 2026 Alex Morgan. All rights reserved.</p>
         </motion.div>

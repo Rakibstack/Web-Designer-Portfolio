@@ -91,7 +91,7 @@ export default function Services() {
     <section
       id="services"
       ref={sectionRef}
-      className="py-32 px-6 md:px-12 bg-gray-900 text-white relative overflow-hidden"
+      className="py-32 px-6 md:px-12 bg-gray-900 dark:bg-gray-950 text-white relative overflow-hidden"
     >
       {/* Animated background particles */}
       <motion.div

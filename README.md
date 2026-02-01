@@ -1,46 +1,46 @@
 # Minimal Web Designer Portfolio
 
-A clean, professional portfolio website for web designers. Built with Next.js, TypeScript, and Tailwind CSS.
+A high-end, minimal web designer portfolio website built to showcase professional UI/UX design sense, clean layout, and modern frontend practices.  
+This project focuses on **clarity, typography, spacing, and subtle interactions** rather than heavy animations or flashy effects.
 
-## Features
+---
 
-- Minimal, high-end design aesthetic
-- Smooth, subtle animations with Framer Motion
-- Fully responsive layout
-- Clean typography and spacing
-- Professional sections: Hero, Work, Services, About, Contact
+## ✨ Project Overview
 
-## Getting Started
+This is a **frontend-only portfolio website** designed for a professional web designer or frontend developer.  
+The goal of the project is to present work in a **calm, confident, and human-designed interface** that feels premium and recruiter-friendly.
 
-Install dependencies:
-```bash
-npm install
-```
+The UI follows modern design principles inspired by **Apple, Linear, and Vercel-style minimalism**.
 
-Run development server:
-```bash
-npm run dev
-``
-## Customization
+---
 
-- Edit content in `components/` files
-- Adjust colors in `tailwind.config.js` (accent color)
-- Replace placeholder images in the Work section
-- Update metadata in `app/layout.tsx`
+## 🎯 Key Features
 
-## Build for Production
+- Minimal and professional UI design  
+- Strong typography and clean spacing  
+- Selected work showcase with subtle hover effects  
+- Services section with clear value presentation  
+- Clean and simple contact form UI (frontend only)  
+- Fully responsive layout (mobile, tablet, desktop)  
+- Reusable and well-structured components  
 
-```bash
-npm run build
-npm start
-```
+---
 
-## Design Philosophy
+## 🎨 Design Philosophy
 
-This portfolio follows a minimal, human-designed approach:
-- No flashy effects or heavy animations
-- Clean white background with dark text
-- Single accent color for focus
-- Large, readable typography
-- Perfect spacing and alignment
-- Subtle hover interactions only
+- Less animation, more clarity  
+- Clean layout over flashy effects  
+- Subtle interactions only where necessary  
+- Focus on readability and visual balance  
+- Human-centered, recruiter-safe design  
+
+---
+
+## 🛠 Tech Stack
+
+- **React** / **Next.js**
+- **Tailwind CSS**
+- **Framer Motion** (light usage for subtle transitions)
+- JavaScript (ES6+)
+
+> No backend or authentication is used in this project.
