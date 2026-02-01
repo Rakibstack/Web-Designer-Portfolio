@@ -7,7 +7,7 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme, mounted } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,16 +65,18 @@ export default function Header() {
           </motion.a>
 
           {/* Theme Toggle */}
-          <motion.button
-            onClick={toggleTheme}
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-            whileHover={{ scale: 1.1, rotate: 180 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.3 }}
-            aria-label="Toggle theme"
-          >
-            {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
-          </motion.button>
+          {mounted && (
+            <motion.button
+              onClick={toggleTheme}
+              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              whileHover={{ scale: 1.1, rotate: 180 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <FiMoon size={20} /> : <FiSun size={20} />}
+            </motion.button>
+          )}
 
           <motion.a
             href="#contact"
